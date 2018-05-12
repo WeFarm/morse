@@ -1,7 +1,7 @@
-(defproject morse "0.4.0"
+(defproject wefarm/morse "0.4.0"
   :description "Telegram Bot API"
 
-  :url "https://github.com/otann/morse/"
+  :url "https://github.com/Wefarm/morse/"
 
   :dependencies [[org.clojure/clojure "1.8.0" :scope "provided"]
                  [org.clojure/tools.macro "0.1.5"]
@@ -21,7 +21,7 @@
 
   ;; Artifact deployment info
   :scm {:name "git"
-        :url "https://github.com/otann/morse"}
+        :url "https://github.com/Wefarm/morse/"}
 
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
@@ -33,7 +33,7 @@
                   ["deploy" "clojars"]]
 
   :pom-addition [:developers [:developer
-                              [:name "Anton Chebotaev"]
-                              [:url "http://otann.com"]
-                              [:email "anton.chebotaev@gmail.com"]
+                              [:name "Adam Neilson"]
+                              [:url "https://wefarm.org"]
+                              [:email "adam@wefarm.org"]
                               [:timezone "+1"]]])
