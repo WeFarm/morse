@@ -23,7 +23,9 @@
          on-success  (fn [resp]
                        (if-let [data (-> resp :body (json/parse-string true) :result)]
                          (a/put! result data)
-                         (a/put! result ::error))
+                         (do
+                           (log/debug "An issue with the Telegram API response" resp )
+                           (a/put! result ::error)))
                        (a/close! result))
          on-failure  (fn [err]
                        (log/debug err "Exception while getting updates from Telegram API")

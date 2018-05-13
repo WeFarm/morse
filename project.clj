@@ -1,4 +1,4 @@
-(defproject wefarm/morse "0.4.0"
+(defproject wefarm/morse "0.4.1"
   :description "Telegram Bot API"
 
   :url "https://github.com/Wefarm/morse/"
